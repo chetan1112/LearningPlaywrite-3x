@@ -1,0 +1,41 @@
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# environment
+.env
+.env.local
+.env.*.local
+
+# editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# system files
+.DS_Store
+Thumbs.db
+
+# coverage
+coverage/
+
+# build output
+dist/
+build/
