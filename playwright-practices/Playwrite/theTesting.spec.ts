@@ -10,7 +10,7 @@ test('thethestingacdemy', async ({page})=>{
     await pass.click();
     await pass.fill("12345");
     await page.locator("//input[@type='checkbox']").click();
-
+    await page.waitForTimeout(5000);
     let submit= page.locator("//button[@class='login-btn']")
     await submit.click();
     await page.locator("//a[@data-testid='form-forgot-password']").click()

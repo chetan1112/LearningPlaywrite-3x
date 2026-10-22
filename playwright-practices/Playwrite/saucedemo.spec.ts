@@ -8,7 +8,6 @@ test ('saucedemo', async ({page})=>{
     console.log("DOne all ")
 })
 
-import { test, expect} from '@playwright/test';
 test("Verfiy the error message in the wingify free trial", async({ page})=>{
 
     await page.goto("https://wingify.com/free-trial/");

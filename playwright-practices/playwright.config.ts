@@ -10,6 +10,8 @@ export default defineConfig({
   reporter: [
     ['list'],
     ['html', { open: 'never' }],
+    // Uncomment after npm install successfully installs allure-playwright.
+    // ['allure-playwright', { resultsDir: 'allure-results' }],
   ],
   use: {
     baseURL: 'https://example.com',
@@ -19,6 +21,15 @@ export default defineConfig({
     video: 'retain-on-failure',
   },
   projects: [
+    {
+      name: 'session',
+      testDir: './Playwrite',
+      testMatch: '**/*.spec.ts',
+      use: {
+        ...devices['Desktop Chrome'],
+        headless: false,
+      },
+    },
     {
       name: 'chromium',
       use: {

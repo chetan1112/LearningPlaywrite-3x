@@ -39,3 +39,7 @@ coverage/
 # build output
 dist/
 build/
+
+# Allure reports
+allure-results/
+allure-report/
